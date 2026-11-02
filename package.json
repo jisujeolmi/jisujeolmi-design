@@ -1,0 +1,10 @@
+{
+  "name": "jisujeolmi-design",
+  "private": true,
+  "description": "jisujeolmi design system — Zen theme, shared tokens, React UI components for web & mobile",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build": "npm run build -w packages/tokens && npm run build -w packages/ui",
+    "dev": "npm run dev -w apps/showcase"
+  }
+}

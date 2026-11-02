@@ -1,0 +1,28 @@
+{
+  "name": "@jisujeolmi/tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for jisujeolmi Zen — colors, typography, spacing, CSS generation",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./css": {
+      "types": "./dist/css.d.ts",
+      "import": "./dist/css.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
